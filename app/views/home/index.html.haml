@@ -1,1 +1,12 @@
-%h1 Please Add Value Here
+%h1
+  <span class='title-a'>Sage</span><span class='title-b'>Tap</span>
+
+#quote
+  &ldquo;
+  = @quote.text
+  &rdquo;
+
+#author
+  &mdash;
+  %a{ :href => "#{@quote.author_link}"}
+    = @quote.author

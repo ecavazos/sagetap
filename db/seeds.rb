@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+#
+
+Quote.create({
+  :text => 'Do not overrate what you have received, nor envy others. He who envies others does not obtain peace of mind.',
+  :author => 'Buddha',
+  :author_link => 'http://en.wikipedia.org/wiki/Buddha'
+})

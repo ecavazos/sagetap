@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    logger.info('i drop logs!')
+    @quote = Quote.first
   end
 end

@@ -1,0 +1,12 @@
+= form_for @quote do |f|
+  .field
+    = f.label 'Profound words of wisdom'
+    = f.text_area :text, :rows => 5
+  .field
+    = f.label :author
+    = f.text_field :author
+  .field
+    = f.label 'Learn more link for the author'
+    = f.text_field :author_link
+  .field
+    = f.submit 'Submit'

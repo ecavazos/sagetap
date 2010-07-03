@@ -7,7 +7,13 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 #
 
-Quote.create({
+root = User.create({
+    :email    => 'root@trunk.local'
+    :name     => 'root'
+    :password => '1234'
+  })
+
+root.quotes.create({
   :text => 'Do not overrate what you have received, nor envy others. He who envies others does not obtain peace of mind.',
   :author => 'Buddha',
   :author_link => 'http://en.wikipedia.org/wiki/Buddha'

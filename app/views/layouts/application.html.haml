@@ -8,11 +8,14 @@
 %body
   #header
     %a{ :href => '#' } Sign in
+
   #root
+    %h1
+      <span class='title-a'>Sage</span><span class='title-b'>Tap</span>
+
     %p{ :class => "notice" }
       = notice
     %p{ :class => "alert" }
       = alert
 
     = yield
-

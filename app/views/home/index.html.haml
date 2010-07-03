@@ -1,6 +1,3 @@
-%h1
-  <span class='title-a'>Sage</span><span class='title-b'>Tap</span>
-
 #quote
   &ldquo;
   = @quote.text
@@ -10,3 +7,6 @@
   &mdash;
   %a{ :href => "#{@quote.author_link}", :target => '_blank' }
     = @quote.author
+
+#navi
+  =link_to 'Add quote', new_quote_path

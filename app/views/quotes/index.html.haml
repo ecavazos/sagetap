@@ -1,0 +1,11 @@
+- @quotes.each do |q|
+  #quote
+    &ldquo;
+    = q.text
+    &rdquo;
+
+  #author
+    &mdash;
+    %a{ :href => "#{q.author_link}", :target => '_blank' }
+      = q.author
+

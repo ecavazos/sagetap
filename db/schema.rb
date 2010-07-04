@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(:version => 20100703055318) do
     t.text     "text"
     t.string   "author"
     t.string   "author_link"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,6 +32,9 @@ ActiveRecord::Schema.define(:version => 20100703055318) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "username"
+    t.string   "first_name"
+    t.string   "last_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

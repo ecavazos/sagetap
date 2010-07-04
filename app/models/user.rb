@@ -6,7 +6,16 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation
+  attr_accessible :email,
+                  :password,
+                  :password_confirmation,
+                  :username,
+                  :first_name,
+                  :last_name
 
   has_many :quotes
+
+  def is_root?
+    email == 'root@sagetap.com'
+  end
 end

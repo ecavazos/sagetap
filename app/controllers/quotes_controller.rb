@@ -1,6 +1,6 @@
 class QuotesController < ApplicationController
   def index
-    @quotes = Quote.all
+    @quotes = Quote.order('created_at desc')
   end
 
   def new
@@ -11,9 +11,19 @@ class QuotesController < ApplicationController
     @quote = current_user.quotes.build params[:quote]
 
     if @quote.save
+      if current_user.is_root?
+        return redirect_to quotes_url
+      end
       redirect_to root_path
     else
       render :action => 'new'
     end
+  end
+
+  def destroy
+    # TODO: only root user can delete
+
+    Quote.find(params[:id]).destroy
+    redirect_to quotes_url
   end
 end

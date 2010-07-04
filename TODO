@@ -1,12 +1,26 @@
-== TODO
+# TODO
 
-* Quote management
+* Quote management (for admin)
+  * Grouping/Category
+    * programming
+    * design
+    * biz
+    * geek
+    * beer
+    * music
+    * life/good/evil/philosophy
+    * humor
+    * good advice
+
 * Show Quote on home page
 * Users
   * Sign up
   * Sign in
+  * OAuth
   * History of quotes you added
 * Voting
+  * Wise (up)
+  * Dumb (up)
 * Searching
 * Find by tag
 

@@ -2,7 +2,7 @@
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 
 root = User.create({
-         :email      => 'root@trunk.local',
+         :email      => 'root@sagetap.com',
          :first_name => 'Mike',
          :last_name  => 'Hunt',
          :uesrname   => 'root',

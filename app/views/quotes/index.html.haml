@@ -1,3 +1,6 @@
+#navi
+  = link_to 'Add', new_quote_path, :class => 'link-button'
+
 - @quotes.each do |q|
   #quote
     &ldquo;
@@ -8,4 +11,7 @@
     &mdash;
     %a{ :href => "#{q.author_link}", :target => '_blank' }
       = q.author
+
+  #quote-util
+    = link_to 'Delete', q, :confirm => 'Are you sure?', :method => :delete, :class => 'link-button delete'
 

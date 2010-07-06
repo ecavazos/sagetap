@@ -1,0 +1,6 @@
+#row= link_to 'Add', new_category_path
+- @categories.each do |c|
+  .category
+    = link_to c.name, edit_category_path(c)
+    &mdash;
+    = link_to 'Delete', c, :confirm => 'Are you sure?', :method => :delete

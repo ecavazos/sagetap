@@ -5,6 +5,7 @@ class CreateQuotes < ActiveRecord::Migration
       t.string :author
       t.string :author_link
       t.references :user
+      t.references :category
 
       t.timestamps
     end

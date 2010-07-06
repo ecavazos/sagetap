@@ -1,18 +1,7 @@
 # TODO
 
-* Quote management (for admin)
-  * Grouping/Category
-    * programming
-    * design
-    * biz
-    * geek
-    * beer
-    * music
-    * life/good/evil/philosophy
-    * humor
-    * good advice
-
 * Show Quote on home page
+* permalink
 * Users
   * Sign up
   * Sign in
@@ -20,7 +9,8 @@
   * History of quotes you added
 * Voting
   * Wise (up)
-  * Dumb (up)
+  * Dumb (down)
+* Navigation
 * Searching
 * Find by tag
 

@@ -1,0 +1,9 @@
+= form_for @category do |f|
+  .field
+    = f.label :name, 'Category Name'
+    = f.text_field :name
+  .field
+    = f.submit 'Submit'
+    or
+    = link_to "Cancel", categories_path, :class => "cancel"
+

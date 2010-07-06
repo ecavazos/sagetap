@@ -1,15 +1,18 @@
 = form_for @quote do |f|
   .field
-    = f.label 'Profound words of wisdom'
+    = f.label :text, 'Profound words of wisdom'
     = f.text_area :text, :rows => 5
   .field
     = f.label :author
     = f.text_field :author
   .field
-    = f.label 'Learn more link for the author'
+    = f.label :author_link, 'Learn more link for the author'
     = f.text_field :author_link
   .field
-    = f.submit 'Submit'
+    = f.label :category_id
+    = f.select :category_id, Category.order('name asc').collect {|c| [c.name, c.id]}, :include_blank => true
+  .field
+    = f.submit 'Submit', :class => 'submit-button'
     or
-    = link_to "Cancel", root_path, :class => "cancel"
+    = link_to 'Cancel', root_path, :class => 'cancel'
 

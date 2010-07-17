@@ -137,6 +137,12 @@ h1 {
   text-align: center;
   width: 640px; }
 
+#quote-footer {
+  font-size: 12px; }
+  #quote-footer li {
+    display: inline-block;
+    margin: 0 20px; }
+
 .link-button {
   background-color: #5973b7;
   -webkit-border-top-left-radius: 6px;

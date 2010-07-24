@@ -1,0 +1,24 @@
+#quote
+  &ldquo;
+  = @quote.text
+  &rdquo;
+
+#author
+  &mdash;
+  %a{ :href => "#{@quote.author_link}", :target => '_blank' }
+    = @quote.author
+
+#navi
+  = link_to 'Add quote', new_quote_path, :class => 'link-button'
+
+#quote-footer
+  %ul
+    %li
+      Previous
+    %li
+      Shared by
+      = @quote.user.username
+    %li
+      = link_to "Permalink", @quote
+    %li
+      Next

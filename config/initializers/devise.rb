@@ -126,13 +126,12 @@ Devise.setup do |config|
   #
   config.warden do |manager|
     manager.oauth(:twitter) do |twitter|
-      twitter.consumer_secret 'aiLQK6MaKVhxXwrEH5EKvgAOkg8c9ncIv1wHMFASY'
-      twitter.consumer_key '3LWjJrSzx6u4UJ3kvbvRQ'
+      twitter.consumer_key Sagetap::Settings.twitter_consumer_key
+      twitter.consumer_secret Sagetap::Settings.twitter_consumer_secret
       twitter.options :site => 'http://twitter.com'
     end
 
     Warden::OAuth.access_token_user_finder(:twitter) do |access_token|
-      puts " ====== access_token_user_finder "
        User.find_by_access_token_and_access_secret(access_token.token, access_token.secret)
     end
 

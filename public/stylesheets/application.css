@@ -176,7 +176,9 @@ h1 {
   .field input, .field textarea, .field label, .field select {
     float: left;
     clear: left; }
-  .field input[type='text'], .field textarea {
+  .field input[type='text'],
+  .field input[type='password'],
+  .field textarea {
     border: solid 0px #dadada;
     -webkit-box-shadow: #bbbbbb 0 0 4px;
     -moz-box-shadow: #bbbbbb 0 0 4px;
@@ -190,3 +192,10 @@ h1 {
     margin-bottom: 5px; }
   .field .submit-button {
     margin-right: 5px; }
+
+.remember_me {
+  overflow: hidden;
+  zoom: 1;
+  margin-bottom: 5px;
+  padding: 5px 20px;
+  text-align: left; }

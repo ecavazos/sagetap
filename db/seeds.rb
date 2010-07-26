@@ -5,7 +5,7 @@ root = User.create({
          :email      => 'root@sagetap.com',
          :first_name => 'Mike',
          :last_name  => 'Hunt',
-         :uesrname   => 'root',
+         :username   => 'root',
          :password   => '123456'
        })
 
@@ -14,6 +14,7 @@ Category.create(:name => 'Business')
 Category.create(:name => 'Design')
 Category.create(:name => 'Humor')
 Category.create(:name => 'Music')
+
 philosophy = Category.create(:name => 'Philosophy')
 Category.create(:name => 'Software Development')
 
